@@ -10,7 +10,7 @@ export default function Footer() {
                 {/* Left Section */}
                 <div className="space-y-4">
 
-                    <h3 className="text-white text-2xl font-bold">Aaronn</h3>
+                    <h3 className="text-white text-2xl font-bold">shams</h3>
                     <p className="text-sm max-w-md">
                         I'm a New York-based visual designer focused on branding and visual identity. Let's create impactful digital experiences together.
                     </p>
@@ -44,17 +44,17 @@ export default function Footer() {
                     <div className="space-y-2">
                         <h4 className="text-white font-semibold">Services</h4>
                         <ul className="space-y-1">
-                            <li><a href="#" className="hover:text-[#027922]">Branding</a></li>
-                            <li><a href="#" className="hover:text-[#027922]">UI/UX Design</a></li>
-                            <li><a href="#" className="hover:text-[#027922]">Web Design</a></li>
+                            <li><a href="#" className="hover:text-[#027922]">Web Developer</a></li>
+                            <li><a href="#" className="hover:text-[#027922]">Front-end</a></li>
+                            <li><a href="#" className="hover:text-[#027922]">Back-end</a></li>
                         </ul>
                     </div>
 
                     <div className="space-y-2">
                         <h4 className="text-white font-semibold">Contact</h4>
                         <ul className="space-y-1">
-                            <li>Email: <a href="mailto:hello@aaronn.com" className="hover:text-[#027922]">hello@aaronn.com</a></li>
-                            <li>Phone: <a href="tel:+123456789" className="hover:text-[#027922]">+1 234 567 89</a></li>
+                            <li>Email: <a href="mailto:hello@aaronn.com" className="hover:text-[#027922]">shamsraza222333@gmail.com</a></li>
+                            <li>Phone: <a href="tel:+123456789" className="hover:text-[#027922]">+1 234 5679</a></li>
                         </ul>
                     </div>
                 </div>

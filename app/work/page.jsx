@@ -5,15 +5,15 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 
 const projects = [
-    { id: 1, title: "Orbituary", image: "/img/work1.webp", tag: "NFT" },
-    { id: 2, title: "Vast Lands", image: "/img/work2.webp", tag: "3D Art" },
-    { id: 3, title: "Fragments", image: "/img/work3.webp", tag: "ARVR" },
-    { id: 4, title: "Outburst", image: "/img/work4.webp", tag: "Logo" },
-    { id: 5, title: "Perspectives", image: "/img/work5.webp", tag: "Artwork" },
-    { id: 6, title: "Metaburst", image: "/img/work6.webp", tag: "Brand" },
-    { id: 7, title: "Polymind", image: "/img/work7.webp", tag: "Blend" },
-    { id: 8, title: "Forth Avatar", image: "/img/work8.webp", tag: "Visual" },
-    { id: 9, title: "Low Tower", image: "/img/work9.webp", tag: "Unreal" },
+    { id: 1, title: "Smart Student Portal", image: "/img/work1.webp", tag: "EduLink" },
+    // { id: 2, title: "chartered professional account", image: "/img/work2.webp", tag: "TCPA " },
+    { id: 3, title: "Fragments", image: "/img/work3.webp", tag: "ShopEase" },
+    // { id: 4, title: "E-Commerce Website", image: "/img/work4.webp", tag: "wishingBasket" },
+    { id: 5, title: "PortfolioX", image: "/img/work5.webp", tag: "Personal Portfolio with Admin Panel" },
+    // { id: 6, title: "B2C Portal", image: "/img/b2c.png", tag: "Aircontrip" },
+    // { id: 7, title: "Room Booking Portal", image: "/img/work7.webp", tag: "The Moon" },
+    { id: 8, title: "Amazon Clone", image: "/img/amazon.png", tag: "Amazon" },
+    // { id: 9, title: "B2B Portal", image: "/img/b2b.png", tag: "aircontrip" },
 ];
 
 export default function MyWorks() {
@@ -22,7 +22,7 @@ export default function MyWorks() {
     const selectedProject = projects.find((p) => p.id === selectedId);
 
     return (
-        <section className="bg-black text-white py-20 px-4 sm:px-6 lg:px-10">
+        <section className="bg-gradient-to-br from-black to-gray-900 text-white py-20 px-4 sm:px-6 lg:px-10">
             <div className="text-center mb-14">
                 <motion.h2
                     initial={{ opacity: 0, y: 20 }}

@@ -11,7 +11,9 @@ function Header() {
     const navLinks = [
         { name: "about-me", id: 0, url: "/about-me" },
         { name: "works", id: 1, url: "/work" },
-        { name: "contacts", id: 2, url: "/contact" },
+        { name: "services", id: 3, url: "/services" },
+        { name: "course", id: 4, url: "/course" },
+        { name: "contacts", id: 5, url: "/contact" },
     ];
 
     return (

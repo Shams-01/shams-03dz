@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function ProjectDetail() {
     return (
-        <section className="bg-black text-white px-6 py-20 md:px-10">
+        <section className="bg-gradient-to-br from-black to-gray-900 text-white px-6 py-20 md:px-10">
             {/* Header */}
             <motion.div
                 initial={{ opacity: 0, y: -20 }}

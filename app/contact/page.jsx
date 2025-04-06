@@ -1,11 +1,37 @@
 "use client";
 import { motion } from "framer-motion";
+import {useRef} from "react";
 import Image from "next/image";
+import emailjs from "@emailjs/browser";
+import {toast, ToastContainer} from "react-toastify";
 
 export default function ContactPage() {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+            .sendForm("service_elzkiks", "template_w9g2o97", form.current, "q9pQwzbn9CcqrTbaj")
+            .then(
+                (res) => {
+                    toast.success("Send successfully ", {
+                        position: "bottom-right",
+                    });
+                    console.log(res);
+                },
+                (error) => {
+                    toast.error("Error in sendEmail ", {
+                        position: "bottom-right",
+                    });
+                    console.log(error);
+                }
+            );
+    };
     return (
-        <section className="bg-black text-white px-6 py-20 md:px-10">
+        <section className="bg-gradient-to-br from-black to-gray-900 text-white px-6 py-20 md:px-10">
             {/* Header */}
+            <ToastContainer/>
             <motion.div
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -27,21 +53,34 @@ export default function ContactPage() {
                     transition={{ duration: 0.7 }}
                 >
                     <h2 className="text-3xl font-semibold mb-6">Get in Touch With Us</h2>
-                    <form className="space-y-6">
+                    <form  ref={form} onSubmit={sendEmail} className="space-y-6">
                         <input
                             type="text"
                             placeholder="Name"
+                            name="name"
                             className="w-full bg-transparent border-b border-gray-600 py-2 placeholder-gray-400 focus:outline-none focus:border-[#027922]"
+                            required
+                        />
+                        <input
+                            type="email"
+                            placeholder="email"
+                            name="email"
+                            className="w-full bg-transparent border-b border-gray-600 py-2 placeholder-gray-400 focus:outline-none focus:border-[#027922]"
+                            required
                         />
                         <input
                             type="text"
                             placeholder="Subject"
+                            name=" subject"
                             className="w-full bg-transparent border-b border-gray-600 py-2 placeholder-gray-400 focus:outline-none focus:border-[#027922]"
+                            required
                         />
                         <textarea
                             placeholder="Message"
                             rows={4}
+                            name="message"
                             className="w-full bg-transparent border-b border-gray-600 py-2 placeholder-gray-400 focus:outline-none focus:border-[#027922]"
+                            required
                         />
                         <button
                             type="submit"
@@ -60,22 +99,21 @@ export default function ContactPage() {
                     transition={{ duration: 0.7 }}
                     className="space-y-6"
                 >
-                    <div className="w-full h-[300px] md:h-[400px] rounded-xl overflow-hidden border border-[#027922]/30">
+                    <div
+                        className="w-full h-[300px] md:h-[400px] rounded-xl overflow-hidden border border-[#027922]/30">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.9122070525435!2d-122.0842496846912!3d37.421999979825994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb5c5af6f6e4b%3A0x93e94cc2b12bbbf2!2sGoogleplex!5e0!3m2!1sen!2sus!4v1600000000000!5m2!1sen!2sus"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.113518424429!2d81.00119607658888!3d26.958970609657246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399959ea1636becf%3A0xbd102a3d103ffce9!2sIntegral%20University%20Boys%20Hostel%20-%20Hall%201!5e0!3m2!1sen!2sin!4v1743940092885!5m2!1sen!2sin"
                             width="100%"
                             height="100%"
-                            style={{ border: 0 }}
+                            style={{border: 0}}
                             allowFullScreen={false}
                             loading="lazy"
-                            referrerPolicy="no-referrer-when-downgrade"
-                        />
+                            referrerPolicy="no-referrer-when-downgrade"></iframe>
                     </div>
 
                     <div className="text-sm text-gray-400 space-y-1 text-center lg:text-left">
-                        <p>📍 Street Avenue 21, CA</p>
-                        <p>📞 +91 6261234567</p>
-                        <p>📧 <a href="mailto:info@aaronn.com" className="hover:text-[#027922]">info@aaronn.com</a></p>
+                        <p>📍 Integral University, block (A)</p>
+                        <p  className="hover:text-[#027922]"> 📧 shams.raza@neuralnexuslab.com</p>
                     </div>
                 </motion.div>
             </div>

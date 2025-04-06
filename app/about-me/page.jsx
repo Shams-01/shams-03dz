@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function AboutPage() {
     return (
-        <section className="bg-black text-white py-20 px-4 sm:px-6 lg:px-10">
+        <section className="bg-gradient-to-br from-black to-gray-900 text-white py-20 px-4 sm:px-6 lg:px-10">
             {/* Header */}
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -29,13 +29,14 @@ export default function AboutPage() {
                     className="space-y-6"
                 >
                     <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold leading-snug">
-                        My mission is to make design easier.
+                        My mission is to solve client problems efficiently and effectively.
                     </h2>
                     <p className="text-gray-400 text-base sm:text-lg leading-relaxed">
-                        Create custom Designs with AARONN that converts more visitors than any website.
-                        With lots of unique design ideas, you can easily select a logo without hassle.
-                        Create custom listings and builds with AARONN that converts more visitors than
-                        any website. With lots of reviews, you can easily build a logo without problem.
+                        Hi, I’m Md Shams Raza, a chill and passionate software developer. My approach is simple — use my skills to deliver high-quality work, make my clients happy, and, of course, turn those skills into success.
+
+                        I’ve completed a lot of projects across different domains, and the feedback from clients has been consistently positive. I believe in smart work, clean code, and keeping the vibe stress-free while getting things done.
+
+                        Let’s build something awesome together!
                     </p>
                 </motion.div>
 
@@ -49,7 +50,7 @@ export default function AboutPage() {
                 >
                     <div className="rounded-2xl overflow-hidden border border-[#027922]/30 w-full sm:w-[250px]">
                         <Image
-                            src="/img/about-1.webp"
+                            src="/img/me1.jpg"
                             alt="Team Member 1"
                             width={250}
                             height={300}
@@ -58,7 +59,7 @@ export default function AboutPage() {
                     </div>
                     <div className="rounded-2xl overflow-hidden border border-[#027922]/30 w-full sm:w-[250px]">
                         <Image
-                            src="/img/about-2.webp"
+                            src="/img/me3.jpg"
                             alt="Team Member 2"
                             width={250}
                             height={300}

@@ -2,7 +2,7 @@
 import Image from "next/image";
 import "../about-me/aboutme.css";
 import { motion } from "framer-motion";
-
+import Link from "next/link";
 function AboutMeSection() {
     return (
         <section className="w-full bg-black text-white py-20 relative overflow-hidden">
@@ -39,11 +39,12 @@ function AboutMeSection() {
                     </h2>
                     <p className="text-gray-400 text-base leading-relaxed">
                         {/* Replace this with your actual bio */}
-                        I’m Md Shams Raza, a passionate front-end developer and UI designer who blends clean code with striking visuals to craft engaging digital experiences.
+                        I'm Md Shams Raza — a passionate Software Engineer, full-stack Web Developer, and creative thinker. I specialize in building powerful, scalable web solutions by blending clean, efficient code with intuitive design. From front-end interfaces that captivate users to robust back-end systems that drive performance, I turn ideas into seamless digital experiences.
                     </p>
-                    <button className="bg-[#027922] hover:bg-[#02631b] text-white px-6 py-3 rounded-full transition duration-300">
-                        Discover More About Me
-                    </button>
+                    <Link className="bg-[#027922] hover:bg-[#02631b] text-white px-6 py-3 rounded-full transition duration-300"
+                     href="/about-me"> Discover More About Me
+                       
+                    </Link>
                 </motion.div>
 
                 {/* 👤 Image Section */}
@@ -56,9 +57,9 @@ function AboutMeSection() {
                 >
                     <div className="overflow-hidden rounded-3xl shadow-lg shadow-[#027922]/10">
                         <Image
-                            src="/img/about.webp"
-                            width={500}
-                            height={500}
+                            src="/img/me4.jpg"
+                            width={300}
+                            height={300}
                             alt="Profile"
                             className="w-full h-auto object-cover"
                         />

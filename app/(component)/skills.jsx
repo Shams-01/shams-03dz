@@ -5,15 +5,19 @@ import { Quote } from "lucide-react";
 
 const testimonials = [
     {
-        name: "Martin Lee",
+        name: "Minhad Rizwan",
         text: `Aaron was fantastic to work with from start to finish. We were looking for a simple, stand-out logo and he delivered...`,
     },
     {
-        name: "Jessica Brown",
+        name: "Hamid Asraf",
         text: `Working with Aaron was incredibly smooth. His creative vision and attention to detail made a big difference.`,
     },
     {
-        name: "David Kim",
+        name: "Faizan Ahmad",
+        text: `His designs were not only visually impressive but also very effective in communication.`,
+    },
+    {
+        name: "Mehruddin Khan",
         text: `His designs were not only visually impressive but also very effective in communication.`,
     },
 ];
