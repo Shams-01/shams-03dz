@@ -1,0 +1,12 @@
+@keyframes wave-motion {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.animate-wave-motion {
+    animation: wave-motion 12s linear infinite;
+}
