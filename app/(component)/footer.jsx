@@ -62,7 +62,7 @@ export default function Footer() {
 
             {/* Bottom Note */}
             <div className="mt-10 text-center text-xs text-gray-500 border-t border-[#027922]/10 pt-6">
-                &copy; {new Date().getFullYear()} Aaronn. All rights reserved.
+                &copy; {new Date().getFullYear()} Md Shams Raza. All rights reserved.
             </div>
         </footer>
     );
